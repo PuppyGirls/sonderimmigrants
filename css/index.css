@@ -1,0 +1,433 @@
+@import'reset1.css';
+
+/*瀏覽器小於多少適用之樣式
+@media screen and (max-width: 900px){
+
+}*/
+/**{
+	box-sizing: border-box;
+}*/
+body{
+	position: relative;
+	background: #fbf9f3;
+}
+h1,h2,h3,h4,h5,h6,p{
+	text-align: center;
+}
+/*清浮動*/
+.clearfix::after{
+	/*沒有的話新增一個*/
+	content: "";
+	/*要塊元素才能用clear*/
+	display: block;
+	clear: both;
+}
+
+/*大圖輪播or視覺差效果*/
+#Taiwan{
+	/*position: absolute;
+	z-index: 15;*/
+	text-align: right;
+}
+#Taiwan img{
+	width: 80px;
+	height: 160px;
+}
+#South{
+	/*position: absolute;
+	z-index: 10;*/
+	text-align: left;
+}
+#South img{
+	width: 520px;
+	height: 270px;
+}
+@keyframes plane{
+	0%{
+		transform: translate(1200px,-110px) scale(0.9,0.9) rotate(30deg);
+	}
+	25%{
+		transform: translate(975px,-110px) scale(1.1,1.1)rotate(32deg);
+	}
+	30%{
+		transform: translate(920px,-100px) scale(1.1,1.1)rotate(30deg);
+	}
+	50%{
+		transform: translate(750px,-14px) scale(1.1,1.1)rotate(20deg);
+	}
+	75%{
+		transform: translate(525px,83px) scale(1.0,1.0)rotate(15deg);
+	}
+	100%{
+		transform: translate(300px,180px) scale(0.9,0.9)rotate(10deg);
+	}
+}
+#plane{
+	position: absolute;
+	z-index: 1000;
+	text-align: right;
+	margin-right: 120px;
+	animation: plane 2.5s linear infinite;
+}
+#plane img{
+	width: 120px;
+	height: 80px;
+}
+
+/*選項列*/
+.nav{
+	margin: 0 auto;
+	padding: 10px 30px;
+	border-radius: 25px;
+	height: 45px;
+	width: 65%;
+	background: #fff;
+	/*陰影*/
+	box-shadow: 0 0 5px #666;
+	/*半透明*/
+	opacity: 0.9;
+	margin-top: 10px;
+	/*黏性定位*/
+	position: sticky;
+	top: 50px;
+	z-index: 1;
+}
+#title{
+	float: left;
+}
+.btli{
+	/*左浮動，橫排*/
+	float: right;
+	/*width: 80px;*/
+	padding: 0 10px;
+	/*行高*/
+	line-height: 45px;
+	/*水平居中*/
+	text-align: center;
+	/*字的顏色*/
+	color: #532100;
+	font-weight: bold;
+}
+.navlist a{
+	/*以塊顯示*/
+	display: block;
+	padding: 0 5px;
+	color: #532100;
+}
+/*滑鼠懸停時*/
+.navlist a:hover{
+	color: #d7680c;
+	background: #feeba9;
+	border-radius: 15px;
+}
+/*下拉選項*/
+/*.droplist{
+		不顯示
+	display: none;
+	background: #d7680c;
+	box-shadow: 0 0 2px #666;
+		圓角
+	border-radius: 15px;
+		超出部分隱藏
+	overflow: hidden;
+}
+.droplist li a:hover{
+	color: #532100;
+	background: #feeba9;
+	border-radius: 0px;
+}
+.navlist .droplist a{
+	color: #fbf9f3;
+	font-size: 12px;
+	padding: 0 5px;
+}
+	當滑鼠移到選項時，下拉選項
+.btli:hover .droplist{
+	display: block;
+}
+.droplist li{
+		用線隔開
+	border-top: 1px solid #EC8640;
+}*/
+/*.clear{
+	clear: both;
+}*/
+
+/*作品簡介*/
+#作品簡介{
+	color: #df7338;
+	margin: 0 70px;
+	padding: 20px 0;
+	font-weight: bold;
+}
+#作品簡介 span h1{
+	font-size: 38px;
+	line-height: 16px;
+}
+#作品簡介 span h3{
+	font-size: 22px;
+	line-height: 34px;
+}
+#作品簡介 span p{
+	color: #532100;
+	padding: 0 30px;
+	font-size: 18px;
+	line-height: 30px;
+	/*text-indent: 2em;*/
+}
+
+/*受訪者介紹*/
+#受訪者介紹{
+	width:84%;
+	margin: 10px auto 60px;
+	padding: 30px 0;
+	background-color: #fff;
+	border-radius: 70px;
+}
+.peopletitle{
+	color: #532100;
+	margin: 0 auto;
+	width: 70%;
+	height: 70px;
+	background: #ffe37d;
+	border-radius: 50px;
+}
+.peopletitle h3{
+	font-weight: bold;
+	padding: 10px 0 0 0;
+}
+.peopletitle p{
+	font-weight: bold;
+	text-align: 70px;
+}
+.Co-Nation,.Iso-Life{
+	padding: 30px 0;
+	margin: 0 auto;
+	width:60%;
+	color: #532100;
+}
+
+.people .c13-1 img:hover{
+	transform: rotate(-8deg);
+	opacity: .8;
+}
+.people .c2-1 img:hover{
+	transform: rotate(8deg);
+	opacity: .8;
+}
+.people{
+	/*padding-bottom:150px;*/
+}
+.people .c13-1{
+	/*padding-left: 50px;*/
+	width: 35%;
+	height: 200px;
+	float: left;
+}
+.people img{
+	margin: 0 auto;
+	float: inherit;
+	/*line-height: 200px;*/
+	width: 200px;
+	height: 200px;
+	border-radius: 30% 60% 60% 50%/80% 40% 70% 30%;
+}
+.people .c13-2{
+	/*padding-right: 100px;*/
+	width:  65%;
+	height: 200px;
+	float: right;
+	font-size: 16px;
+	line-height: 25px;
+	margin: auto 0;
+	/*text-align: left;*/
+}
+.people .c2-1{
+	/*padding-right: 50px;*/
+	width: 35%;
+	height: 200px;
+	float: right;
+}
+.people .c2-2{
+	/*padding-left: 100px;*/
+	width: 65%;
+	height: 200px;
+	float: left;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.c13-2more:hover{
+	opacity: .6;
+}
+.people h4{
+	font-size: 20px;
+	/*padding: 15px;*/
+	text-align: left;
+	font-weight: bold;
+}
+.people p{
+	/*padding: 0 20px;*/
+	text-align: left;
+	font-weight: bold;
+}
+.people a{
+	font-size: 14px;
+	/*display: block;*/
+	/*text-align: right;*/
+	/*margin: 200px 20px;*/
+	/*padding: 10px 20px;*/
+	font-weight: bold;
+	color: #857868;
+}
+
+
+/*東南亞小百科*/
+.東南亞title{
+	padding: 20px 0;
+	font-weight: bold;
+	color: #532100;
+}
+#東南亞小百科{
+	width: 100%;
+	margin:0  auto;/*
+	display: flex;
+	justify-content: center;
+	align-items: center;*/
+}
+.container{
+	margin:0  auto;
+	position: relative;
+	width: 1500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 30px;
+}
+.container .card{
+	position: relative;
+	max-width: 325px;
+	height: 200px;
+	background: #fff;
+	margin: 30px 10px;
+	padding: 20px 13px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+	transition: 0.3s ease-in-out;
+}
+.container .card:hover{
+	height: 380px;
+}
+.container .card .imgBx{
+	position: relative;
+	width: 260px;
+	height: 260px;
+	top: -60px;
+	left: 20px;
+	z-index: 1;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.container .card .imgBx img{
+	max-width: 100%;
+	border-radius: 4px;
+}
+.container .card .content{
+	position: relative;
+	margin-top: -140px;
+	padding: 10px 15px;
+	text-align: center;
+	font-weight: bold;
+	color: #532100;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
+.container .card .content p{
+	text-align: left;
+}
+.container .card:hover .content{
+	visibility: visible;
+	opacity: 1;
+	margin-top: -40px;
+	transition-delay: 0.3s;
+}
+
+/*友站連結*/
+#link{
+	height: 400px;
+	width: 100%;
+}
+#linkdetail{
+	font-weight: bold;
+	padding: 100px 100px;
+	height: 165px;
+	background-color: #333;
+	color: #fff;
+	line-height:27px;
+}
+#linkdetail a{
+	color: #fff;
+}
+#linkdetail a:hover{
+	opacity: .8;
+}
+#linkdetail .img{
+	height: 100%;
+	float: left;
+	margin: 0 40px;
+}
+#linkdetail .img img{
+	/*margin: auto 20px;*/
+	width: 220px;
+	height: 190px;
+	border-radius: 40px;
+}
+.lastplane{
+	position: absolute;
+	transform: translate(1000px);
+	z-index: 100;
+	margin: 40px 0 0 0 ;
+}
+#linkdetail .lastplane img{
+	width: 300px;
+	height: 190px;
+}
+#linkdetail .detail{
+	float: left;
+	margin: 30px;
+}
+.igfb img{
+	width: 30px;
+	height: 30px;
+}
+#last{
+	height: 35px;
+	width: 100%;
+	background: #fbf9f3;
+	color: #857868;
+	text-align: center;
+	line-height: 35px;
+}
+
+/*回到頂部*/
+.backtop a{
+	display: block;
+	height: 50px;
+	width: 50px;
+	background: #FFEDAD;
+	box-shadow: 0 0 2px;
+	position: fixed;
+	bottom: 60px;
+	right: 25px;
+	/*之後可刪*/
+	color: #df7338;
+	font-weight: bold;
+	line-height: 47px;
+	text-align: center;
+	font-size: 17px;
+	border-radius: 15px;
+	z-index: 2000;
+}
+
