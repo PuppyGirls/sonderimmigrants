@@ -324,18 +324,21 @@ nav:after{
 }
 /*語言小教室*/
 main{
-	padding: 150px 0 100px;
+	padding: 180px 0 100px;
 }
 main h2{
+	margin: 0 auto;
+	width: 200px;
 	padding: 50px 0 0;
-	color: #532100;
-	font-size: 34px;
+}
+main h2 img{
+	width: 100%;
 }
 .lan{
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
-	padding: 80px;
+	padding: 50px 80px 80px;
 }
 .lan section{
 	margin: 0 15px;
