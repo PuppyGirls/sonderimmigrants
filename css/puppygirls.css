@@ -501,6 +501,14 @@ header{
 	background: #ffeba3;
 	color: #532100;
 }
+#teacher section h2{
+	margin: 0 auto;
+	width: 200px;
+	padding: 50px 0 0;
+}
+#teacher section h2 img{
+	width: 100%;
+}
 .teacher{
 	margin: 0 auto;
 	width: 70%;
@@ -537,6 +545,14 @@ header{
 	background: #ffeba3;
 	padding: 50px 0 120px;
 	color: #532100;
+}
+#Lesther section h2{
+	margin: 0 auto;
+	width: 200px;
+	padding: 50px 0 0;
+}
+#Lesther section h2 img{
+	width: 100%;
 }
 .Lesther{
 	margin: 50px auto 0;
