@@ -6,6 +6,8 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="keywords" content="移風異俗,東南亞,移民,移工,新住民,狗派少女">
 	<meta name="description" content="介紹新移民在台創業故事">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script>
 	<title>The Sonder of Immigrants</title>
 	<link rel="icon" href="../image/puppygirls.ico">
 	<link rel="stylesheet" href="../css/dnyxbk.css" media="all">
@@ -101,10 +103,8 @@
 						<br>● 你好漂亮<br>&nbsp;&nbsp;&nbsp;คุณสวยจริงจริง<br>&nbsp;&nbsp;&nbspkun-sui-jing-jing
 						<br>● 這個賣多少錢<br>&nbsp;&nbsp;&nbsp;ราคาเท่าไร  laka-tao-lai
 					</p>
-					<div class="lanimg">
-						<a href="">
-							<img src="../image/voice.png" alt="">
-						</a>
+					<div class="lanimg" id="music">
+						<img src="../image/voice.png" alt="">
 						<img src="../image/puppygirls.png" alt="">
 					</div>
 				</section>
@@ -117,11 +117,8 @@
 						<br>● 	再見<br>&nbsp;&nbsp;&nbsp;Hẹn gặp lại
 						<br>● 這個多少錢？<br>&nbsp;&nbsp;&nbsp;Cái này bao nhiêu tiền?
 					</p>
-					<div class="lanimg">
-						
-						<a href="">
-							<img src="../image/voice.png" alt="">
-						</a>
+					<div class="lanimg" id="music2">
+						<img src="../image/voice.png" alt="">
 						<img src="../image/puppygirls.png" alt="">
 					</div>
 				</section>
@@ -134,10 +131,8 @@
 						<br>● 多少錢？<br>&nbsp;&nbsp;&nbsp;berapa？
 						<br>● 很高興認識你<br>&nbsp;&nbsp;&nbsp;Senang berkenalandengan<br>&nbsp;&nbsp;&nbsp;Anda
 					</p>
-					<div class="lanimg">
-						<a href="">
-							<img src="../image/voice.png" alt="">
-						</a>
+					<div class="lanimg" id="music3">
+						<img src="../image/voice.png" alt="">
 						<img src="../image/puppygirls.png" alt="">
 					</div>
 				</section>
@@ -150,13 +145,45 @@
 						<br>● 	是咧！<br>&nbsp;&nbsp;&nbsp;liē – 表示肯定
 						<br>● 	是吼<br>&nbsp;&nbsp;&nbsp;hǒu  – 表示恍然大悟
 					</p>
-					<div class="lanimg">
-						<a href="">
-							<img src="../image/voice.png" alt="">
-						</a>
+					<div class="lanimg" id="music4">
+						<img src="../image/voice.png" alt="">
 						<img src="../image/puppygirls.png" alt="">
 					</div>
 				</section>
+					<script>
+						$(document).ready(function() {
+    						$("#music").on("click", function() {
+        						var audio = new Audio("../voice/TG.mp3");
+        						audio.play();
+        						$("#music").on("click", function(){audio.pause();
+        						});
+    						});
+						});
+						$(document).ready(function() {
+    						$("#music2").on("click", function() {
+        						var audio = new Audio("../voice/YN.mp3");
+        						audio.play();
+        						$("#music2").on("click", function(){audio.pause();
+        						});
+    						});
+						});
+						$(document).ready(function() {
+    						$("#music3").on("click", function() {
+        						var audio = new Audio("../voice/IN.mp3");
+        						audio.play();
+        						$("#music3").on("click", function(){audio.pause();
+        						});
+    						});
+						});
+						$(document).ready(function() {
+    						$("#music4").on("click", function() {
+        						var audio = new Audio("../voice/ML.m4a");
+        						audio.play();
+        						$("#music4").on("click", function(){audio.pause();
+        						});
+    						});
+						});
+					</script>
 			</section>
 		</section>
 	</main>
