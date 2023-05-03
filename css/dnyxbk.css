@@ -337,7 +337,7 @@ main h2 img{
 .lan{
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: flex-start;
 	padding: 50px 80px 80px;
 }
 .lan section{
@@ -383,7 +383,9 @@ main h2 img{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 30px 0 0;
+	margin: 30px 0 0 100px;
+	width: 100%;
+
 }
 .lanimg a{
 	width: 20%;
